@@ -1,25 +1,50 @@
 name: Milton Workshop
-favicon: null
-layout_spectrum: 0.8
-cta:
-  domain: null
-  bucket: null
-  version: null
 analytics:
+  twitter: null
   google: null
   facebook: null
-  twitter: null
 opengraph:
   image: null
   type: null
   appId: null
-color:
-  brandColors: []
-  brandStrength: 0
-  lightness: 0.5
-  saturation: 0.5
-  rhythmicContrast: 0.5
+collections:
+  - filter:
+      notType:
+        type: WebPage
+    index:
+      path: /
+      number: 15
+      paginate: true
+      navigable: true
+    feed:
+      path: /rss.xml
+      format: rss
+      number: 10
+  - filter:
+      type:
+        type: Article
+    permalink:
+      path: '/:title/'
+  - filter:
+      type:
+        type: WebPage
+    permalink:
+      path: '/:title/'
+      navigable: true
 purpose:
   - name: follow
-    item: null
     url: null
+    item: null
+typography_spectrum: 0.915682
+color:
+  saturation: 0.5
+  brandStrength: 0
+  lightness: 0.707304
+  brandColors: []
+  rhythmicContrast: 0.7019334
+layout_spectrum: 1
+cta:
+  bucket: null
+  version: null
+  domain: null
+favicon: null
