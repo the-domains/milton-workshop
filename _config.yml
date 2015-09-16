@@ -22,9 +22,9 @@ color:
     - '#fe5a00'
     - '#979797'
   brandStrength: 1
-  lightness: 0.5
-  saturation: 0.5
-  rhythmicContrast: 0.5
+  lightness: 0.6875
+  saturation: 0.6875
+  rhythmicContrast: 0.75
 purpose:
   - name: follow
     item: 3ce5123a-88b2-4abc-8a81-467409cc9c0d
